@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>防骗与防假消息：给全家的一课</title>
+<style>
+:root{--ink:#22201c;--paper:#faf8f3;--accent:#a01e14;--soft:#efe9df;--ok:#1d6b3a;--link:#1a4d8f;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC","Source Han Sans SC","Noto Sans CJK SC","Microsoft YaHei",Roboto,Arial,sans-serif;}
+main{max-width:44rem;margin:0 auto;padding:20px 18px 80px;}
+h1{font-size:30px;line-height:1.3;margin:0 0 8px;}
+h2{font-size:25px;line-height:1.3;margin:56px 0 10px;border-top:3px solid var(--ink);padding-top:26px;}
+h3{font-size:21px;margin:34px 0 8px;}
+p{margin:14px 0;}
+a{color:var(--link);}
+.lede{font-size:20px;color:#4a463e;}
+.small{font-size:15px;color:#6c6759;}
+.chip{display:inline-block;background:var(--accent);color:#fff;font-size:12px;font-weight:700;letter-spacing:.12em;padding:3px 10px;border-radius:999px;vertical-align:middle;}
+.note{background:var(--soft);border-left:4px solid var(--accent);padding:14px 16px;border-radius:0 10px 10px 0;margin:20px 0;}
+.rule{background:#fff;border:1px solid #ddd6c8;border-radius:14px;padding:16px 18px;margin:14px 0;font-size:20px;}
+.rule b{color:var(--accent);}
+.toc{background:#fff;border:1px solid #ddd6c8;border-radius:14px;padding:16px 20px;margin:22px 0;}
+.toc a{display:block;padding:6px 0;text-decoration:none;}
+audio{width:100%;margin:8px 0 4px;}
+.call{background:#fff;border:1px solid #ddd6c8;border-radius:14px;padding:16px 18px;margin:18px 0;}
+.call h4{margin:2px 0 4px;font-size:19px;}
+.transcript{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:16.5px;color:#3d392f;margin-top:10px;}
+.transcript .trap{background:#f8d7d3;color:#7c1710;padding:0 4px;border-radius:4px;font-weight:600;}
+.transcript p{margin:8px 0;}
+.quizcard{background:#fff;border:1px solid #ddd6c8;border-radius:14px;padding:16px;margin:16px 0;}
+.faces{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.faces img{width:100%;border-radius:10px;display:block;cursor:pointer;border:3px solid transparent;aspect-ratio:1/1;object-fit:cover;background:#e8e4da;}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:none;font-size:17px;padding:10px 18px;border-radius:10px;cursor:pointer;margin:6px 6px 0 0;}
+.btn.alt{background:#fff;color:var(--ink);border:1.5px solid var(--ink);}
+.btn:disabled{opacity:.45;cursor:default;}
+.feedback{margin-top:10px;font-size:17px;display:none;}
+.feedback.good{color:var(--ok);}
+.feedback.bad{color:var(--accent);}
+.headline{font-size:20px;font-weight:700;line-height:1.5;margin:4px 0 12px;}
+.verdict{display:none;margin-top:10px;padding:12px 14px;border-radius:10px;font-size:17px;}
+.verdict.real{background:#e2f0e5;border-left:4px solid var(--ok);}
+.verdict.fkx{background:#fae4e1;border-left:4px solid var(--accent);}
+.revealbox{display:none;background:var(--soft);border-radius:10px;padding:14px 16px;margin-top:12px;font-size:17px;}
+ol.srcs{font-size:15.5px;color:#4a463e;padding-left:22px;}
+ol.srcs li{margin:8px 0;overflow-wrap:anywhere;}
+.posgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0;}
+.pos{background:#fff;border:1px solid #ddd6c8;border-radius:12px;padding:12px;font-size:16.5px;}
+@media (max-width:560px){.posgrid{grid-template-columns:1fr;}}
+footer{margin-top:60px;font-size:14px;color:#6c6759;border-top:1px solid #ddd6c8;padding-top:18px;}
+</style>
+</head>
+<body>
+<main>
+
+<h1>防骗与防假消息：给全家的一课</h1>
+<p class="lede">一次读完，不用懂技术，也不用难为情。新一代的电话骗局和网络假消息，一条一条当面拆给您看——在这里看过假的，外面真的就骗不到您了。</p>
+
+<p>只要您有手机、心里有家人、手里有一点积蓄，您就是这个新产业的目标客户——不是因为您不小心，而是因为您值得被他们盯上。现在有两件事同时变了：人工智能只要几秒钟的录音或者一张照片，就能模仿任何人的声音和脸；您手机里刷到的"新闻"，也有越来越多根本不是人写的、人播的，而是机器做的，您越看、越生气、越转发，它们越赚钱。</p>
+
+<p>这一课用的方法有点特别：<b>把假的东西安全地摆到您眼前，让您亲手拆一遍。</b>心理学家管这叫"思想疫苗"——就像真正的疫苗一样，先安全地接触一点点病毒的样子，身体和脑子以后就认得出它。这不是民间偏方，是英国剑桥大学的研究项目，还跟谷歌一起在三千多万名视频观众身上做过实验，效果有数据可查。本页每一个说法，在最底下都附了出处链接。</p>
+
+<div class="note"><b>上课前先说清楚一句话：</b>这种事谁都可能碰上——教授、老医生、退休干部、年轻人，都不例外。干这一行的是职业骗子，有剧本、有培训、有心理研究。被一个精心设计的骗局骗到，说明不了您的任何智力问题。整件事里唯一该难为情的，只有骗子本人。</div>
+
+<div class="toc">
+<b>这一课的内容</b>
+<a href="#part1">上篇 · 会骗人的电话（诈骗电话、声音克隆、假脸，和保护您的规矩）</a>
+<a href="#part2">下篇 · 不再是新闻的"新闻"（假消息、带节奏、一分钟查证法）</a>
+<a href="#part3">习惯篇 · 五条家规、安全暗号、万一中招怎么办</a>
+<a href="#sources">所有出处，全部附上链接</a>
+</div>
+
+<h2 id="part1">上篇 · 会骗人的电话</h2>
+
+<h3>1. 现在，几秒钟的录音就能克隆任何人的声音</h3>
+<p>安全公司McAfee（迈克菲）在2023年调查了七个国家共7000名成年人：骗子只需要一段<b>很短的录音</b>——您发过的视频、语音留言，几秒钟就够——就能做出以假乱真的声音克隆。调查里<b>每10个人就有1个接到过AI模仿亲友声音的诈骗联系，上当的人里77%都损失了钱</b>。七成受访者承认，他们分辨不出克隆声音和真人声音的区别。</p>
+<p>所以我们不教您"怎么听出假声音"——很快就没人听得出来了。我们教您更管用的：<b>永远不要只凭声音相信一件事，要凭流程确认。</b>流程在第7、第8两节。</p>
+
+<h3>2. 亲耳听：四段诈骗电话，全都是假的</h3>
+<p>下面每段录音都是人工智能为这一课生成的。<span class="chip">AI 演示</span> 里面没有真人，也没有真的受害者。每段开头都有一句演示说明，结尾有一句安全提示——这是我们用的工具强制要求的。<b>真正的骗子什么提醒都不会给您。</b>每段录音下面我们都把"钩"——也就是骗局真正收口的那句话——用红底标了出来。</p>
+<div class="call">
+<h4>电话一 · 假冒保险理赔，转接"公安" <span class="chip">AI 演示</span></h4>
+<audio controls preload="none" src="audio-scam-insurance.mp3"></audio>
+<div class="transcript">
+<p>录音说："……我们系统里收到一份以您的名义提交的医疗理赔申请，金额8700美元。如果这不是您本人提交的，表示您的个人信息可能已经被盗用。<span class="trap">我需要把您的电话转接给警方协助立案，请您不要挂机。</span>"</p>
+<p><b>钩就在最后这半句。</b>前面一切听起来都合理：有具体金额、有正常流程。真正的钩是"把您转接给公安"和"不要挂机"。真保险公司理赔，绝不会理赔着理赔着把您转给警察。挂断，用保险卡背面的官方号码自己打回去问。</p>
+</div>
+</div>
+
+<div class="call">
+<h4>电话二 · "孩子出车祸了" <span class="chip">AI 演示</span></h4>
+<audio controls preload="none" src="audio-scam-family.mp3"></audio>
+<div class="transcript">
+<p>录音说："妈，妈，是我。我出事了，我出车祸了……<span class="trap">你先别给爸打电话。等下有一个律师会跟你通话，你按他说的转钱就可以。你千万不要挂电话，也千万不要跟别人说。</span>"</p>
+<p><b>钩是"保密"加"着急"再加一个上门的"律师"。</b>真遇到事的孩子，不怕您多问一句——问一个只有家人才知道的问题，或者直接问安全暗号（第8节）。您核实不是不管孩子，恰恰是在保护孩子。</p>
+</div>
+</div>
+
+<div class="call">
+<h4>电话三 · "你女儿在我们手上"（虚拟绑架） <span class="chip">AI 演示</span></h4>
+<p class="small" style="margin:2px 0">56秒 ・ 两段连放：先是一段哭声，然后是"绑匪"。</p>
+<audio controls preload="none" src="kidnapping-call-zh.mp3"></audio>
+<div class="transcript">
+<p>录音说："妈！妈！我出事了，我不知道我在哪里！你快帮帮我！"接着一个男人的声音：<span class="trap">"听好了。你女儿在我们手上。不许挂电话，也不许报警。你要是挂断，就再也见不到她。现在立刻开车去银行，按我说的做。"</span></p>
+<p><b>这通电话的全部目的，就是不让您打那一通求证的电话。</b>这种骗局叫"虚拟绑架"。FBI（美国联邦调查局）已经正式警告：骗子现在把AI克隆的哭声和从社交媒体上偷来的照片拼成"绑架证据"。绝大多数情况下根本没有人被绑架。挂断，亲自给孩子打回去，同时报警。一分钟就能戳穿。</p>
+</div>
+</div>
+
+<div class="call">
+<h4>电话四 · 假冒"公安"的逮捕令 <span class="chip">AI 演示</span></h4>
+<audio controls preload="none" src="audio-scam-police.mp3"></audio>
+<div class="transcript">
+<p>录音说："我是公安局的陈警官，警号02158……<span class="trap">你必须保持电话畅通，不准告诉任何人，包括你的家人。今天下午5点之前，你必须把保证金转进我们提供的账户。如果你挂断电话或者通知家属，我们将立刻对你实施逮捕。</span>"</p>
+<p><b>真公安办案，从来不是这个样子的。</b>不存在电话里的"逮捕令"，不存在"保证金账户"，更不存在"不能告诉家里人"这三个字。三样里出现一样，就是骗局本身。这套话术已经骗过太多在美国的华人老人，FBI在2025年11月专门为此发出了第一份面向中文用户的官方警告（出处见文末）。挂断。要放心，就自己找官方电话打过去问。</p>
+</div>
+</div>
+
+<h3>3. 真脸假脸，您来挑</h3>
+<p>每一轮有两张头像。一张是真实的人，照片存在公开的维基共享图库里；另一张是AI几秒钟"画"出来的，这个人<b>在这个世界上根本不存在</b>。点出您认为是假的那张。最后一轮有个花样。</p>
+<div id="facequiz"></div>
+<p class="small">图片来源：假脸为公开的StyleGAN示例图集（GitHub上junguler/TPDNE_example_images）；真人照片来自维基共享（Jorge Royan拍摄的肖像两张，CC BY-SA 3.0；Palenquera肖像一张，CC BY 3.0）。以前还能靠牙齿、耳环、背景看出破绽，新一代生成器把这些都修好了。真正长久的防线不是"看出假脸"，而是：涉及钱和家人的事，绝不只凭一张脸、一个声音就行动。</p>
+
+<h3>4. 六位数验证码的门道</h3>
+<p>微信里收到亲戚的消息："我刚刚登录输错了你的号码，把你收到的验证码发我一下？"或者电话里"银行客服"让您"把刚收到的验证码念给我确认"。真实发生的事情是：<b>对方正坐在您账号的登录页或改密页面上</b>——微信、网银、邮箱——而发到您手机上的那六位数字，就是挡在门口的最后一道锁。美国的联邦贸易委员会（FTC）说得很直接：要验证码的，全是冒充。把码给了对方，您的微信就成了他们的微信：他们再用您的名义，去跟每一个信您的亲友开口。</p>
+<div class="rule"><b>一句话记住：</b>登录验证码就是只能用一次的钥匙。您不会把家门钥匙的齿形念给电话里的陌生人听。谁要验证码都不给——不管对方听起来是谁。</div>
+
+<h3>5. 礼品卡、"安全账户"、黄金——这些词一出现就是骗局，没有例外</h3>
+<p>美国FTC的原话：<b>只有骗子才会让您买礼品卡来付款。</b>银行、法院、税务局、水电公司、保释机构，没有一个收礼品卡。同样没有例外的：让您转账进"安全账户"、让您买黄金交给上门的"工作人员"、让您到柜员机操作"退款"再顺手把钱转走。所有这些方式的共同点只有一个：钱一到手就追不回来。骗子选它们，正是因为追不回来。</p>
+
+<h3>6. 真实的数字，和几个真事</h3>
+<p>FBI的互联网犯罪投诉中心统计：<b>2024年一年，美国人报上来的网络犯罪损失是166亿美元。60岁以上的人损失最多——接近50亿美元</b>，报案人数也最多。这还只是报了案的；很多钱因为"不好意思说"，永远没进统计。</p>
+<div class="posgrid">
+<div class="pos"><b>她以为自己在替FBI工作。</b>朱迪斯・布瓦万，马里兰州80岁的退休老人，一辈子当护士、社工、心理治疗师，照顾了别人一辈子。骗子让她相信自己几个月来一直在秘密协助联邦探员，最后骗走了60万美元——她全部的养老钱。《华盛顿邮报》用七篇的系列报道记下了这件事。</div>
+<div class="pos"><b>"那就是他的声音啊。"</b>2025年年底，佛罗里达一位祖母被骗了20万美元——那是她为患有自闭症的孙子攒了好多年的护理费。电话里是她孙子的声音，她发誓。那是克隆出来的。此事由当地电视台Action News Jax报道。</div>
+</div>
+<p>请看清楚受害者是谁：一位心理治疗师，一位最疼爱孙辈的奶奶。这些骗局利用的从来不是"笨"，<b>是"爱"和"急"</b>——这两样，人人都有。</p>
+
+<h3>7. 头十秒钟：背下来就用</h3>
+<div class="note">
+<p style="margin-top:0"><b>电话里只要不对劲，照这句念，念完就停：</b><br>"这种事我不在电话里处理。再见。"</p>
+<p><b>然后挂断。</b>真事不怕晚十分钟——所以接下来慢慢做这三步：(1) 骗子自称是银行或机构？用您自己卡片背面、对账单上、官网上的号码打回去求证，<b>绝不用对方打来的号码</b>；(2) 自称是家人？用您自己通讯录里的号码给他本人打回去，或者问安全暗号；(3) 把刚才这通电话讲给一个家人听。骗局靠"保密"和"着急"活着，这三步正好把这两样都拆掉。</p>
+<p style="margin-bottom:0"><b>打来您电话的人，永远无权要求您：</b>报姓名确认、念验证码、报生日、瞒着家里人、不许挂电话、今天就决定。真的机构永远让您可以回头再打过去；只有骗子才怕您挂电话。</p>
+</div>
+
+<h3>8. 家里的安全暗号</h3>
+<p>全家一起定一个别人猜不到的词——不要宠物名，不要住过的街名，越没头没尾越好——写在下面那张家规卡上，全家把这一条说成定例：<b>凡是电话里提到出事、要钱，先问安全暗号；对不上暗号，就挂断，自己回拨。不管声音多像，没有例外。</b>花九十秒钟就能定下来，而它彻底废掉声音克隆：机器模仿得了声音，知道不了那个词。</p>
+<h2 id="part2">下篇 · 不再是新闻的"新闻"</h2>
+
+<p>另一半同样要紧。不是所有算计都从电话里来——越来越多的算计穿着"新闻"的外衣，在您的微信群和消息流里一次次出现。被这种东西钓住，不是您的问题；这是一个砸了大价钱造出来的机器专门设计的结果。只要手上有一部手机，人人都站在这台机器里面，儿女们也一样。</p>
+
+<h3>9. 听一段五十秒、从没发生过的新闻</h3>
+<div class="call">
+<h4>"本台刚刚收到的消息……" <span class="chip">AI 演示</span></h4>
+<audio controls preload="none" src="audio-zh-fake-news.mp3"></audio>
+<div class="transcript">
+<p>这段播报说：从下个月起老年人的养老金账户将"全面接管核查"，<span class="trap">"未在24小时内完成验证的账户将被冻结……请立即行动"</span>——全是编的。没有任何账户、任何核查、任何期限。请注意它披的外衣：听起来正式的机构名目、查无实据的"多地已经出现"、一个掐着您脖子的期限，还有一句"请立即行动"。播报的声音是AI做的。假新闻穿着真新闻的衣服，因为我们都被训练成相信那身衣服。</p>
+</div>
+</div>
+
+<h3>10. 这台造假机器到底有多大</h3>
+<p>有一家叫NewsGuard的机构，全职工作就干一件事：追踪哪些"网站"在装新闻媒体。他们现在正在盯的<b>纯AI生成的"新闻网站"已经有3749个</b>，覆盖16种语言（包括中文），名字都起得很正规、很平庸，一天能炮制几十篇文章，靠网页上的广告赚钱。假主播也已经出现在真骗局里：在德国，骗子把全国最有名的两位电视主播的深度伪造视频拿去卖假投资。那这些东西是谁传开的？麻省理工学院把十年间推特上12.6万条经过核实的真消息和假消息全部研究了一遍：<b>假的消息传得比真的明显更远、更快、更深、更广——而且传谣的主要是普通人，不是机器人。</b>刺激的谎，我们抢着转；平淡的真话，躺在原地等人。</p>
+
+<h3>11. 底下那台"让您生气"的引擎</h3>
+<p>为什么您的消息流里全是这种货色？不是有人专门坐下来骗您一个人，而是一笔很明白的生意账：<b>平台靠您的注意力赚钱，而愤怒最能黏住注意力。</b>耶鲁大学、西北大学等机构的研究反复证明：能激起愤怒和义愤的内容被转发的比例高得多，而推荐算法会学着给您喂更多这种东西。这背后是成千上万名工程师，完全按既定意图在工作，美国如此，中国也如此。所以下回一条帖子让您气得血往上涌，请记住：您的愤怒不是意外，是他们的产品。总有人在靠您对素不相识的人发火、发慌来赚钱。</p>
+
+<h3>12. 真的还是编的？六条标题，您来把关</h3>
+<p>下面六条里面，三条是真的、有据可查、点开能看到出处；三条是这一课照着经典假消息的样子现写的。答完就会看到判断的门道。</p>
+<div id="headlinequiz"></div>
+
+<h3>13. 认清这六招——给手法起个名字</h3>
+<p>剑桥那批做"思想疫苗"的研究者发现，全世界的假消息、谣言，翻来覆去就用那么几招。只要您能给手法起出名字，您就会到处看见它们——它们大半就失灵了。各家叫法略有不同，下面六招几乎包圆：</p>
+<div class="posgrid">
+<div class="pos"><b>煽情轰炸。</b>还没让您动脑子，先让您火冒三丈或吓得发抖的词。</div>
+<div class="pos"><b>非此即彼。</b>"要么站我们一边，要么就是敌人。"两个选项，全是圈套。</div>
+<div class="pos"><b>找人背锅。</b>再复杂的问题，全赖某一个"他们"。</div>
+<div class="pos"><b>假冒权威。</b>假专家、假"内部人士"、借一身制服。</div>
+<div class="pos"><b>不辨事、只骂人。</b>攻击说话的人，好让您不去琢磨他说的内容。</div>
+<div class="pos"><b>水军造势。</b>几千个"网友"互相点赞起哄，把没人信的说法刷成人人都信。这是可以直接花钱买的服务。</div>
+</div>
+<p><b>练一练：</b>下面四条贴子，分别用了哪一招？</p>
+<div id="techquiz"></div>
+<h3>14. 带节奏：标题一个字没撒谎，照样骗了您</h3>
+<p>最难防的一种，也是最要紧的一种：不是所有假东西都在说谎。您来试试：</p>
+<div class="quizcard">
+<p style="margin-top:0"><b>同一件事，全部属实。</b>洛杉矶某街区6月装了6个超速摄像头。之后几个月，事故下降了20%；罚款共收了40万美元，钱进了市政府的总基金。以上每一个字都真的。</p>
+<p><b>标题A：</b>"新摄像头让主街事故下降20%"<br>
+<b>标题B：</b>"市政府靠主街司机的罚款进账40万"</p>
+<button class="btn alt" onclick="document.getElementById('spinbox').style.display='block';this.disabled=true">点这里：刚才发生了什么</button>
+<div class="revealbox" id="spinbox"><b>两个标题一个字都没说谎，两个都在操纵您。</b>同样的事实，完全相反的印象：A让您觉得安全了，B让您觉得被宰了——没有捏造任何东西，只是挑了一部分讲。这就叫"带节奏"（spin），正规媒体用得比假媒体还溜。识别的办法：文章把强烈的情绪连同事实一起递给您时，问一句——同样这些事实，换个角度讲会长什么样？还要防另一种：真视频配假解说——几年前别的国家的现场，被当成"刚刚发生在咱们这儿"到处转。</div>
+</div>
+
+<h3>15. 一分钟核实任何一条消息——就用您现成的工具</h3>
+<p>不用装任何软件。凡是让您动了情绪的消息，在相信或转发之前：</p>
+<div class="rule"><b>1.</b> 把那条说法原样搜一下。真够大的新闻，不止一家连记者名字都署着的正规媒体在报。谁都搜不到，或者只有没听说过的小站？到此为止。</div>
+<div class="rule"><b>2.</b> 点开任何一条结果读到底。问：谁写的？想让我产生什么情绪？有没有链到我能自查的官方页面或原始文件？</div>
+<div class="rule"><b>3.</b> 看日期。网上疯传的东西，一大半是旧闻旧视频配上新的惊吓标题。</div>
+<div class="rule"><b>4.</b> 还拿不准？先发给家里人问一句（家规第5条说的就是这个）。核实不慢——把一条谣言转给五十个人，再一个个澄清，那才叫真花时间。</div>
+
+<h3>16. 一个问题问穿一切</h3>
+<div class="note"><b>"谁希望我相信这个？我的愤怒、我的转发，最后进了谁的口袋——或者替谁收了好处？"</b> 如果诚实的答案是"反正不是我"，您就知道该怎么办了。</div>
+
+<h2 id="part3">习惯篇</h2>
+
+<h3>17. 五条家规——一张贴冰箱的卡</h3>
+<div class="rule"><b>一、</b>电话里提钱、取保、验证码、出事：<b>挂断。用自己通讯录里的号码回拨。</b>（银行卡背面、对账单上的号码，绝不用对方打来的号码。）</div>
+<div class="rule"><b>二、</b>家人"出事"来电话？<b>问安全暗号。</b>对不上暗号，不管声音多真，挂断，自己打回去。</div>
+<div class="rule"><b>三、</b><b>短信验证码，绝不读给、转发给任何人。</b>那是您账户的钥匙，没有真人需要它。</div>
+<div class="rule"><b>四、</b>礼品卡是礼物，不是付款方式。<b>让您用礼品卡付钱、向"安全账户"转账、买黄金交"工作人员"的，全是骗子。</b>没有例外。</div>
+<div class="rule"><b>五、</b>看了让您发火发慌的消息，<b>先别转。</b>查一下，或者先发给Jerry问一句。</div>
+<p><b>打印版：</b><a href="family-rules-card-zh.pdf">五条家规卡（PDF，一页）</a>，上面留了写安全暗号和"先问的人"的空行。贴在电话旁边。<span class="small">（黑白打印即可，美国信纸Letter尺寸。）</span></p>
+
+<h3>18. 保护"原材料"</h3>
+<p>克隆需要原料。您没法从互联网上把自己抹掉，但可以让骗子成本高一点：朋友圈、视频号尽量设成仅熟人可见；发自己或孙辈说话清晰的视频前三思（几秒钟就够克隆）；电话语音信箱的问候语用默认的机器声音，别用自己的声音录；网上那种"来答答这些关于你的问题"的帖子永远别答——第一只宠物、妈妈婚前的姓、小时候住的街道，这些是您一堆账户的密码问题的答案。还有就是：这些都做不到位也不要紧。第17节那五条规矩不靠"认出假货"，哪怕骗子手里有您的声音、照片、孙子的名字，照样管用。</p>
+
+<h3>19. 万一真的被骗了</h3>
+<p>总有一天可能有一样漏网——银行家都被骗过。出事后头一个小时的行动，比那个失误本身重要得多：</p>
+<div class="rule"><b>动作要快。</b>先打银行电话——转账在一定时间里还有可能冻结、追回，每个小时都值钱。然后报案：美国联邦贸易委员会的 <a href="https://reportfraud.ftc.gov">reportfraud.ftc.gov</a>，和FBI的 <a href="https://www.ic3.gov">ic3.gov</a>。如果是礼品卡，打卡面背后印的客服电话——卡里还没被划走的钱有时能要回来。</div>
+<div class="rule"><b>当天就告诉家里人。</b>FBI那50亿美元之所以有统计，是因为有人肯报案。难为情保护不了您，只保护骗子；当天说出来，才能赶在同一份剧本打到别家之前提醒他们。</div>
+
+<h3>20. 给儿女们的话</h3>
+<p>如果是您把这一课转给父母的：请轻一点开口。任何人——任何年纪——在被弄得很蠢的感觉里都学不进去。不要检查他们的手机习惯，也不要考他们。换成：把真脸假脸的题一起做一遍，放那几段假电话给他们听，讲一件您自己差点上当的事，把安全暗号当成一个全家的小仪式，而不是一场训话。然后把自己当成那个"先问问"的人，往后很多年都耐心地当：第一百条转来的链接，和第一条，得到同样快、同样不嫌弃的回复。</p>
+
+<h2 id="sources">所有出处，全部附上链接</h2>
+<ol class="srcs">
+<li>FBI 2024年互联网犯罪年度报告新闻稿（2025年4月23日）——总损失166亿美元；60岁以上人群损失最多、接近50亿美元：<a href="https://www.fbi.gov/news/press-releases/fbi-releases-annual-internet-crime-report">fbi.gov</a></li>
+<li>McAfee（迈克菲）2023年"人工伪装者"研究——十分之一的人接到过AI声音克隆联系，上当者77%损失钱财：<a href="https://www.mcafee.com/blogs/privacy-identity-protection/artificial-imposters-cybercriminals-turn-to-ai-voice-cloning-for-a-new-breed-of-scam/">mcafee.com</a></li>
+<li>FTC消费者提示——骗子用AI升级"家人出事"骗局：<a href="https://consumer.ftc.gov/consumer-alerts/2023/03/scammers-use-ai-enhance-their-family-emergency-schemes">consumer.ftc.gov</a></li>
+<li>FTC——为什么会有人要您的验证码：<a href="https://consumer.ftc.gov/consumer-alerts/2024/03/whats-verification-code-why-would-someone-ask-me-it">consumer.ftc.gov</a></li>
+<li>FTC——"只有骗子让您买礼品卡付账"：<a href="https://consumer.ftc.gov/consumer-alerts/2024/10/only-scammers-tell-you-buy-gift-card-pay-them">consumer.ftc.gov</a></li>
+<li>FBI/IC3官方警告（2025年12月）——骗子用AI伪造的"还活着的证据"操纵虚拟绑架赎金骗局：<a href="https://www.ic3.gov/PSA/2025/PSA251205">ic3.gov/PSA/2025/PSA251205</a></li>
+<li>FBI/IC3官方警告（2025年11月13日）——首份专门面向在美中文用户的警告：假冒美国医保电话转假冒中国警方，威胁逮捕、驱逐、索要钱财：<a href="https://www.ic3.gov/PSA/2025/PSA251113">ic3.gov/PSA/2025/PSA251113</a></li>
+<li>《华盛顿邮报》"被骗"系列——朱迪斯・布瓦万案（被骗60万美元，以为自己在替FBI工作）：<a href="https://www.washingtonpost.com/business/interactive/2024/fbi-imposter-scam-victim-elder-fraud/">washingtonpost.com</a></li>
+<li>WBUR（NPR波士顿）On Point节目（2025年1月9日）——朱迪斯・布瓦万访谈：<a href="https://www.wbur.org/onpoint/2025/01/09/scammed-life-savings-michelle-singletary">wbur.org</a></li>
+<li>Action News Jax——"是他的声音"：祖母被AI诈骗骗走为自闭症孙子攒下的20万美元：<a href="https://www.actionnewsjax.com/news/local/it-was-his-voice-grandmother-scammed-out-200k-shed-saved-autistic-grandson-ai-fraud/1796e66b-4f2b-4928-a4c6-443ee7e49b8c/">actionnewsjax.com</a></li>
+<li>NewsGuard AI追踪中心——3749个纯AI内容农场网站（16种语言），仍在增加：<a href="https://www.newsguardtech.com/special-reports/ai-tracking-center/">newsguardtech.com</a></li>
+<li>Vosoughi、Roy、Aral，《真假消息在网络上的传播》，《科学》杂志（2018）——麻省理工对12.6万条消息的研究：<a href="https://www.science.org/doi/10.1126/science.aap9559">science.org</a></li>
+<li>剑桥大学社会决策实验室——"坏消息"防谣游戏（Bad News）：<a href="https://www.sdmlab.psychol.cam.ac.uk/research/bad-news-game">sdmlab.psychol.cam.ac.uk</a>；研究论文：<a href="https://www.nature.com/articles/s41599-019-0279-9">Nature Communications</a></li>
+<li>Roozenbeek等，《科学进展》（2022）——谷歌Jigsaw与剑桥的"预先辟谣"视频实验，约3000万YouTube用户参与：<a href="https://www.science.org/doi/10.1126/sciadv.abo6254">science.org</a></li>
+<li>耶鲁大学管理学院洞察——社交媒体如何奖励假消息：<a href="https://insights.som.yale.edu/insights/how-social-media-rewards-misinformation">insights.som.yale.edu</a></li>
+<li>西北大学凯洛格管理学院（2024）——假消息利用我们转发愤怒的本能：<a href="https://www.kellogg.northwestern.edu/academics-research/research/detail/2024/misinformation-exploits-motivations-to-share-outrage-online/">kellogg.northwestern.edu</a></li>
+<li>The Decoder——德国电视主播被深度伪造用于投资骗局：<a href="https://the-decoder.com/german-news-anchors-fall-victim-to-deepfake-in-ai-driven-investment-scam/">the-decoder.com</a></li>
+</ol>
+<footer>
+<p>中文版本 · 2026年8月 · 为家人准备的一课。本页所有标着"AI 演示"的声音和面孔都是人工智能生成的教学材料，这些人都不存在。假脸图片来自公开的StyleGAN示例图集（GitHub），真人照片来自维基共享（Jorge Royan，CC BY-SA 3.0；Palenquera肖像，CC BY 3.0）。本页永远不向您要任何东西：不收集信息、不要密码、不收钱。任何打着这一课名义收钱的，都是骗子。</p>
+</footer>
+<script>
+(function(){
+var AI=n=>"img-ai-face-"+n+".jpg", RE=n=>"img-real-face-"+n+".jpg";
+var rounds=[
+ {imgs:[{src:AI(1),ai:1},{src:RE(1),ai:0}],note:"真的那张是摄影师Jorge Royan拍的肖像。另外那位——AI从零画出来的，世上没这个人。"},
+ {imgs:[{src:AI(2),ai:1},{src:RE(2),ai:0}],note:"同样：一张是真实的人（维基共享图库Jorge Royan作品），另一张的脸没被任何相机拍到过。"},
+ {imgs:[{src:AI(3),ai:1},{src:RE(3),ai:0}],note:"注意真照片的背景和衣服自然得多；假脸再像，也有种说不出的平。"},
+ {imgs:[{src:AI(4),ai:1},{src:RE(1),ai:0}],note:"如果您觉得这张难分——这正是重点：光靠眼睛保护不了任何人了。"},
+ {imgs:[{src:AI(5),ai:1},{src:AI(1),ai:1}],trick:1,note:"这就是那个花样：<b>两张都是假的。</b>这轮里一个人都不存在。所以涉及钱、涉及家人的事，永远不要凭一张脸、一个声音就做决定——按流程核实。"}
+];
+var el=document.getElementById('facequiz'),cur=0,score=0;
+function render(){
+ var r=rounds[cur],idx=Math.random()<.5?[0,1]:[1,0];
+ var html='<div class="quizcard"><p style="margin:0 0 8px"><b>第'+(cur+1)+'题，共'+rounds.length+'题</b>'+(r.trick?'——最后一题，有个花样':'')+'，点出您认为是<b>假</b>的那张：</p><div class="faces">';
+ idx.forEach(function(i){html+='<img src="'+r.imgs[i].src+'" alt="" data-ai="'+r.imgs[i].ai+'">';});
+ html+='</div><div class="feedback" id="fqfb"></div><div id="fqnext"></div></div>';
+ el.innerHTML=html;
+ var fb=document.getElementById('fqfb'),done=false;
+ el.querySelectorAll('img').forEach(function(img){
+  img.onclick=function(){
+   if(done)return;done=true;img.classList.add('picked');
+   fb.style.display='block';
+   if(r.trick){score++;fb.className='feedback good';fb.innerHTML=r.note;}
+   else if(img.dataset.ai==='1'){score++;fb.className='feedback good';fb.innerHTML='答对了——这张脸从来没存在过。'+r.note;}
+   else{fb.className='feedback bad';fb.innerHTML='这张是真的；另一张才是那个不存在的人。'+r.note;}
+   var nx=document.getElementById('fqnext');
+   if(cur<rounds.length-1){var b=document.createElement('button');b.className='btn';b.textContent='下一题';b.onclick=function(){cur++;render();};nx.appendChild(b);}
+   else{var p=document.createElement('p');p.style.margin='10px 0 0';p.innerHTML='<b>答完啦。成绩：'+score+' / '+rounds.length+'。</b>不管几分都一样——这一课的意思就是谁都可能看不出来，所以第7、第8节的规矩对我们每个人都算数。';nx.appendChild(p);}
+  };
+ });
+}
+render();
+})();
+
+(function(){
+var items=[
+ {h:"FBI首次发出专门面向美国中文用户的警告：假医保电话转假冒公安，威胁逮捕和驱逐",t:1,src:"https://www.ic3.gov/PSA/2025/PSA251113",note:"真的——FBI网络犯罪投诉中心2025年11月13日的正式警告，官方.gov网站，可点开原文核实。"},
+ {h:"紧急通知！！下月起70岁以上老人微信未'实名认证'将永久封号！请速转发给身边亲友！！",t:0,note:"编的——这条是本课照着经典谣言的样子写的。门道：全是感叹号、一个不可能的'一律封号'政策、卡死期限，还有那句最大的破绽——要你转发。真消息从不会命令您转发。"},
+ {h:"监测机构统计：已有3749个网站伪装成新闻媒体，但整站内容完全由AI生成",t:1,src:"https://www.newsguardtech.com/special-reports/ai-tracking-center/",note:"真的——NewsGuard实时追踪的数字，第10节引用的就是它。实话会告诉您数字是谁数的、在哪能核对。"},
+ {h:"院士临终哭诉：喝了一辈子茶全错了！这种叶子降三高治百病，医院不敢说，速存！",t:0,note:"编的——'临终哭诉+包治百病+医院不敢说'三件套，养生谣言的经典配方。真有一种叶子降三高治百病，全世界的头版都会报道，轮不到一条小程序文章。"},
+ {h:"祖母说骗子用AI克隆她孙子的声音，骗走她为孙子攒下的20万美元",t:1,src:"https://www.actionnewsjax.com/news/local/it-was-his-voice-grandmother-scammed-out-200k-shed-saved-autistic-grandson-ai-fraud/1796e66b-4f2b-4928-a4c6-443ee7e49b8c/",note:"真的——Action News Jax电视台2025年12月的报道。有名字的地方、有核实的金额、有出处的媒体。"},
+ {h:"内部流出：银行系统升级，存折用户月底前必须拍照上传，否则存款一律冻结！！",t:0,note:"编的——查不到的'内部'、武断的'一律冻结'，再加拍照上传（下一步就是拿您的资料）。问一句：真升级的话，为什么只有这条文在发，银行网点和官网一个字没有？"}
+];
+var html='';
+items.forEach(function(it,i){
+ html+='<div class="quizcard"><div class="headline">"'+it.h+'"</div><button class="btn" data-i="'+i+'" data-g="1">真的</button><button class="btn alt" data-i="'+i+'" data-g="0">编的</button><div class="verdict" id="hq'+i+'"></div></div>';
+});
+document.getElementById('headlinequiz').innerHTML=html;
+document.querySelectorAll('#headlinequiz [data-i]').forEach(function(b){
+ b.onclick=function(){
+  var i=+b.dataset.i,it=items[i],g=+(b.dataset.g),v=document.getElementById('hq'+i);
+  b.parentElement.querySelectorAll('button').forEach(function(x){x.disabled=true;});
+  v.className='verdict '+(it.t?'real':'fkx');v.style.display='block';
+  v.innerHTML=(g===it.t?'<b>对了。</b> ':'<b>这条要小心。</b> ')+it.note+(it.src?' <a href="'+it.src+'" target="_blank" rel="noopener">点这里，自己核对出处 &nearr;</a>':'');
+ };
+});
+})();
+
+(function(){
+var items=[
+ {t:"&ldquo;他们正在毁掉我们的一切，还当着我们面笑！有种的就转起来！&rdquo;",a:0,why:"煽情轰炸——专门算计您的怒火，再加一句'有种的转'激将。"},
+ {t:"&ldquo;要么支持警察，要么支持打砸抢的暴徒，您自己选一边站。&rdquo;",a:1,why:"非此即彼——只给您两个做了手脚的选项，真实世界有十几种站法。"},
+ {t:"&ldquo;物价涨成这样只有一个原因。跟经济没关，是他们干的。&rdquo;",a:2,why:"找人背锅——复杂的问题全推给某一个'他们'，是政治里最老的戏法。"},
+ {t:"&ldquo;前联邦特工（三十年资历！）冒死爆料，机构最怕您看到的就是这个……&rdquo;",a:4,why:"假冒权威——没名没姓的'退役特工'，查无此人，头衔穿着像制服。"}
+];
+var TECHS=["煽情轰炸","非此即彼","找人背锅","不辨事只骂人","假冒权威","水军造势"];
+var html='';
+items.forEach(function(it,i){
+ html+='<div class="quizcard"><p style="margin-top:0;font-size:18px">'+it.t+'</p>';
+ TECHS.forEach(function(t,j){html+='<button class="btn alt" data-i="'+i+'" data-j="'+j+'">'+t+'</button>';});
+ html+='<div class="feedback" id="tq'+i+'"></div></div>';
+});
+document.getElementById('techquiz').innerHTML=html;
+document.querySelectorAll('#techquiz [data-i]').forEach(function(b){
+ b.onclick=function(){
+  var i=+b.dataset.i,j=+b.dataset.j,it=items[i],v=document.getElementById('tq'+i);
+  b.parentElement.querySelectorAll('button').forEach(function(x){x.disabled=true;});
+  v.style.display='block';
+  if(j===it.a){v.className='feedback good';v.innerHTML='<b>正是。</b> '+it.why;}
+  else{v.className='feedback bad';v.innerHTML='差一点点，但这里的主招是<b>'+TECHS[it.a]+'</b>：'+it.why;}
+ };
+});
+})();
+</script>
+</main>
+</body>
+</html>
